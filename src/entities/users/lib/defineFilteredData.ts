@@ -8,11 +8,12 @@ export function defineFilteredData(usersData: TUser[], filteredOptions: TFilterO
         phone: phoneFilter,
     } = filteredOptions
 
-    return usersData.filter(
-        user =>
+    return usersData.filter(user => {
+        return (
             user.name.toLowerCase().indexOf(nameFilter.toLowerCase()) !== -1 &&
             user.username.toLowerCase().indexOf(usernameFilter.toLowerCase()) !== -1 &&
             user.email.toLowerCase().indexOf(emailFilter.toLowerCase()) !== -1 &&
             user.phone.toLowerCase().indexOf(phoneFilter.toLowerCase()) !== -1
-    )
+        )
+    })
 }
