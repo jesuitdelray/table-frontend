@@ -1,0 +1,38 @@
+.noDataContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--greyscale600);
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+.usersContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100% - 38px);
+
+    .user {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-bottom: 1px solid var(--greyscale200);
+        padding: 15px 10px;
+        color: var(--greyscale600);
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        background-color: white;
+
+        .userLabel {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 10px;
+
+            width: 100%;
+            max-width: clamp(150px, 100%, 500px);
+        }
+    }
+}

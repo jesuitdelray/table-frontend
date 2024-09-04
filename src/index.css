@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/public/InterVariableFonts.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --greyscale100: #f5f7fa;
+    --greyscale200: #e0e4ec;
+    --greyscale300: #c4c7d3;
+    --greyscale400: #9ea4b3;
+    --greyscale500: #7f8697;
+    --greyscale600: #656979;
+    --greyscale700: #4b5e59;
+    --greyscale800: #303439;
+    --greyscale900: #152619;
+
+    --primary-white: #fdfdfe;
+
+    --error-red: #ff2f49;
+
+    --success-green: #00be78;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--greyscale200);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--greyscale100);
+    border-radius: 4px;
+}

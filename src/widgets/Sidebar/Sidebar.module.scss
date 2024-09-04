@@ -1,0 +1,59 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--greyscale200);
+    border-right: none;
+    border-radius: 13px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 100%;
+    width: 250px;
+
+    .filterTitle {
+        color: var(--greyscale700);
+        font-size: 16px;
+        letter-spacing: 0.4px;
+        align-self: center;
+        padding: 10px 0;
+        background-color: var(--greyscale100);
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--greyscale200);
+        border-top-left-radius: 13px;
+    }
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+        .filterInput {
+            width: 100%;
+            border: 1px solid var(--greyscale200);
+            border-radius: 13px;
+            padding: 5px 10px;
+            font-size: 14px;
+            color: var(--greyscale600);
+            height: 36px;
+
+            &:hover {
+                border: 1px solid var(--greyscale300);
+            }
+
+            &:focus {
+                outline: none;
+                border: 1px solid var(--greyscale300);
+            }
+
+            &::placeholder {
+                color: var(--greyscale500);
+            }
+        }
+    }
+}

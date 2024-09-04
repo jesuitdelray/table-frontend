@@ -1,0 +1,10 @@
+.container {
+    border: 1px solid var(--greyscale200);
+    border-radius: 13px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    overflow: hidden;
+}

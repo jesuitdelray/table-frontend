@@ -1,0 +1,6 @@
+export { fetchUsers } from "./model/services/fetchUsers"
+export { setFilterOptions } from "./model/slices/usersSlice"
+export { usersReducer } from "./model/slices/usersSlice"
+export { selectFilteredUsersData } from "./model/selectors/usersSelectors"
+export type { TUser } from "./model/types/types"
+export type { TFilterOptions } from "./model/types/types"
