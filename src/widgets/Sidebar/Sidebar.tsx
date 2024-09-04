@@ -17,6 +17,10 @@ export function Sidebar({
     } = filterOptions
 
     function filtersHandler(field: keyof TFilterOptions, value: string) {
+        if (field === "phone") {
+            value = value.replace(/[^0-9\s-.()x]/g, "")
+        }
+
         setFilterOptions({ ...filterOptions, [field]: value })
     }
 
@@ -46,7 +50,7 @@ export function Sidebar({
                     className={styles.filterInput}
                 />
                 <input
-                    type="number"
+                    type="text"
                     placeholder="Filter by phone"
                     value={phoneFilter}
                     onChange={e => filtersHandler("phone", e.target.value)}
